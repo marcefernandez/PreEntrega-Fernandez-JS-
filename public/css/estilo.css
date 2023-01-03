@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-image:"";
+}
+
+/*estilo header*/
+.nav-container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.header-logo {
+    display: flex;
+}
+
+.img-logo {
+    width: 100px;
+    height: 140px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.navBar-logo {
+    font-size: 15vh;
+    font-family:'Kolker Brush', cursive;
+    margin-left: 50px;
+    margin-top: 5px;
+    color: rgba(198, 0, 0, 0.719);
+}
+
+.ver-carrito {
+    display: flex;
+    /*position: relative;
+    flex-direction: row;
+    margin-left:500px;
+    margin-top: 35px;
+}*/ 
+font-size: 30px;
+padding: 7px;
+top: 40px;
+right: 50px;
+position: absolute;
+}
+
+
+/*
+.header-logo {
+    display: flex;
+
+}
+
+.nav-container .navBar-logo {
+    display: flex;
+    flex-direction: row;
+
+}
+*/
+
+
+
+
+
+/*product cards*/
+.shop-content {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15vh;
+    /*margin-left: 80px;
+    margin-right: 80px;
+*/}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 35px;
+    margin: 5vh;
+}
+
+
+.card > img {
+    width: 90%;
+    height: 250px;
+    padding-top: 10px;
+    border-radius: 40px;
+    margin-top: 5px;
+}
+
+.price {
+    color: red;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+/*modal content*/
+.modal-container {
+    width: 65%;
+    margin: 0 20%;
+    max-height: 60vh;
+    color: #fff;
+    background-color: rgba(198, 0, 0, 0.719);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: rgba(198, 0, 0, 0.719);
+    width: 100%;
+}
+/*
+.modal-header-title {
+    justify-self: start;
+}*/
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+}
+
+.modal-container > div > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+/*delete button product*/
+.delete-product {
+    cursor:pointer;
+}
+
+/*CarritoCounter*/
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 45%;
+    font-size: 12px;
+    padding: 7px;
+    top: 17px;
+    left: 50px;
+    position: absolute;
+    display: none;
+}
