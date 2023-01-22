@@ -35,11 +35,9 @@ const pintarCarrito = () => {
         eliminar.innerText ="❌";
         eliminar.className ="delete-product";
         carritoContent.append(eliminar);
-
-        eliminar.addEventListener("click", eliminarProducto);
+        
+        eliminar.addEventListener("click", eliminarProducto);      
     });
-
-
 
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
 

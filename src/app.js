@@ -41,12 +41,38 @@ productos.forEach((product) => {
             precio: product.precio,
             cantidad:product.cantidad,
         });
-        }   
+        }
         console.log(carrito);
         carritoCounter();
         saveLocal();   
     });
+
+    comprar.addEventListener('click' , () => {
+        swal.fire('Producto agregado al carrito')
+    })
 });
+
+//Api
+document.addEventListener('DOMContentLoaded', traerProductos)
+
+
+async function traerProductos(){
+    const url ='https://fakestoreapi.com/products'
+    
+    try {
+        const resultado = await fetch(url)
+        const respuesta = await resultado.json()
+        pintarProductos(respuesta)
+
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+ function pintarProductos(productos){
+    console.log(productos)
+ }
 
   
 //probar storage
@@ -61,4 +87,3 @@ localStorage.setItem("carrito", JSON.stringify(carrito));
 
 //get item
 JSON.parse(localStorage.getItem("carrito"));
-  

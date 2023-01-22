@@ -34,7 +34,7 @@ const productos =
 
     {
         id: 5,
-        nombre: "Piercing de pezón",
+        nombre: "Piercing de pezones",
         precio: 1000,
         img: 'public/img/foto5.jpg',
         cantidad:1,
